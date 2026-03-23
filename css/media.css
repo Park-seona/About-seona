@@ -377,5 +377,19 @@
     border: 0.5px solid #DBD7FF;
     position: relative;
   }
+
+  .next-btn {
+    width: 100%;
+    min-height: 140px;
+  }
+
+  .next-btn a {
+    width: 100%;
+    min-height: 140px;
+  }
+
+  .next-btn span {
+    font-size: calc(var(--default-FZ)*2.5);
+  }
 }
 
