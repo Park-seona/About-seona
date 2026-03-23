@@ -57,6 +57,7 @@
   transition: transform 0.3s ease;
 
   z-index: 1001;
+
 }
 
 #mobile-nav header {
@@ -85,6 +86,14 @@ body.menu_active {
   border-bottom: 1px solid #222;
 }
 
+#mobile-nav nav ul li:hover {
+  background: #5f4de9;
+}
+
+#mobile-nav nav ul li:hover a {
+  color: #fff;
+}
+
 #mobile-nav nav a {
   font-size: calc(var(--default-FZ)*1.25);
   font-weight: 600;
@@ -103,7 +112,7 @@ body.menu_active {
   width: 100%;
   height: 100%;
 
-  background: var(--Blur, rgba(210, 210, 215, 0.35));
+  background: var(--Blur, rgba(210, 210, 215, 0.45));
   backdrop-filter: blur(3px);
   
   display: flex;
@@ -341,10 +350,9 @@ ul.nav {
 .id-card-wrap {
     display: flex;
     justify-content: center;
-    /* gap: 40px; */
+    gap: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
-
     margin-top: 124px;
 }
 
@@ -492,11 +500,9 @@ ul.nav {
 
 .design-skill-wrap {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: flex-start;
-  /* gap: 32px; */
-  gap: 2rem;
+  gap: 2.5rem;
   padding-top: 100px;
 }
 

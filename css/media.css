@@ -8,6 +8,7 @@
   .menu-overlay {
     display: none;
   }
+
 }
 
 
@@ -23,6 +24,12 @@
 
   .about-me {
     width: 100%;
+  }
+
+  .about-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .id-card-wrap {
@@ -118,11 +125,8 @@
 
   .myth-card {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     height: auto;
     gap: 2.5rem;
-    width: 580px;
     padding: 18px 32px;
   }
 
@@ -133,10 +137,7 @@
     align-items: center;
     gap: 2rem;
   }
-
-  .myth-card-left > .card-diagram-03 {
-    margin-left: 30px;
-  }
+  
   
   .card-ex-wrap {
     width: 450px;
@@ -164,6 +165,11 @@
     justify-content: space-between;
   }
   
+  header {
+    grid-template-columns: auto 1fr auto;
+    height: 64px; 
+  }
+
   header .mobile {
     display: flex;
     align-items: center;
@@ -214,7 +220,23 @@
   }
   
   .myth-card {
+    display: flex;
+    flex-direction: column;
     padding: 20px 0;
+  }
+
+  .myth-card-left {
+    width: 100%;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .myth-card-left > .card-diagram-01 img {
+    width: 100%;
+    max-width: 280px;
   }
 
   .id-card-wrap {
@@ -243,7 +265,8 @@
 @media screen and (max-width: 480px){
   
   header {
-    grid-template-columns: auto 1fr auto; 
+    grid-template-columns: auto 1fr auto;
+    height: 64px; 
   }
   
   .pc-nav {
@@ -313,14 +336,7 @@
     padding: 18px 20px;
   }
 
-  .myth-card-left {
-    width: 100%;
-    max-width: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
+
 
   .card-ex-wrap {
     display: flex;
